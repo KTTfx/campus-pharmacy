@@ -1,11 +1,13 @@
 import { 
+  BeakerIcon,
   AcademicCapIcon,
-  BuildingOfficeIcon,
-  BeakerIcon
-} from '@heroicons/react/24/outline';
+  SparklesIcon
+} from '@heroicons/react/24/outline'
 
 export const Icons = {
-  Pill: AcademicCapIcon, // using AcademicCapIcon as a placeholder
+  Pill: AcademicCapIcon, // Using AcademicCapIcon as a placeholder for Pill
   Beaker: BeakerIcon,
-  Sparkles: BuildingOfficeIcon, // using BuildingOfficeIcon as a placeholder
-} as const;
+  Sparkles: SparklesIcon,
+}
+
+export type IconName = keyof typeof Icons
